@@ -1,0 +1,116 @@
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    background: #088F33;
+    color: white;
+}
+
+.bg-body-tertiary {
+    background: darkgreen !important;
+}
+
+@media (min-width: 992px) {
+    
+
+.navbar-brand {
+    position: absolute;
+    top: -50px;
+    z-index: 9999;
+
+    img {
+        border: 3px solid orange;
+    }
+}
+}
+
+@media(max-width: 660px)
+{
+    .navbar-brand img{ width: 50px;}
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    padding: 15px;
+}
+
+.social li {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    color: green;
+    text-align: center;
+    line-height: 30px;
+}
+
+.about {
+    h3 {
+        background: green;
+        color: white;
+        padding: 6px;
+        font-size: 18px;
+    }
+}
+
+.listnew li {
+    &::before {
+        content: '→';
+    }
+}
+
+.box {
+    height: 240px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        transition: 0.9s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    p {
+        position: absolute;
+        bottom: 20px;
+        left: 0px;
+        background: green;
+        color: wheat;
+        padding: 3px;
+    }
+
+    &:hover {
+        p {
+            background: orange;
+        }
+    }
+}
+.nav-pills .nav-link
+{
+    background: green;
+    color: #fff;
+    border-radius: 0;
+    padding: 10px 30px;
+}
+.nav-pills .nav-link.active
+{
+    background: orange;
+}
+.client
+{
+    background: url(https://www.plannepal.com/assets/img/testimonials/clients.jpg);
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+.sajan
+{
+    width: 70%; height: 100px; background: white;
+    position: absolute; bottom: 60px; left: 50%;
+    transform: translateX(-50%);
+}
